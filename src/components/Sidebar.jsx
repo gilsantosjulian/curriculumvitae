@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Sidebar = () => {
-    return (
-        <h1>Sidebar component</h1>
-    );
-}
+const Sidebar = ({ children }) => (
+	<div className='Sidebar'>
+		<div className='Sidebar-container'>
+			{children}
+		</div>
+	</div>
+);
 
 export default Sidebar;

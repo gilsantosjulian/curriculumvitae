@@ -2,12 +2,27 @@ import React from 'react';
 import Main from '../components/Main';
 import About from '../components/About';
 
+import userGetData from '../hooks/userGetData';
+import Sidebar from '../components/Sidebar';
+
 const App = () => {
-    return (
-        <Main>
-            <About />
-        </Main>
-    );
+	const data = userGetData();
+	console.log(data);
+
+	return (
+		<Main>
+			<Sidebar>
+				<About
+					avatar={data.avatar}
+					name={data.name}
+					profession={data.profession}
+					bio={data.bio}
+					addres={data.addres}
+					social={data.social}
+				/>
+			</Sidebar>
+		</Main>
+	);
 
 };
 
