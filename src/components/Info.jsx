@@ -1,9 +1,11 @@
 import React from 'react';
 
-const Info = () => {
-    return (
-        <h1>Info component</h1>
-    );
-}
+const Info = ({ children }) => (
+	<div className='info'>
+		<div className='Info-container'>
+			{children}
+		</div>
+	</div>
+);
 
 export default Info;
