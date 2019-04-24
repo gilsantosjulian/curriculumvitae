@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Social = () => {
+const Social = (props) => {
+
     return (
-        <h1>Social component</h1>
+        <div>
+            {props.social && props.social.map((item) => <div key={item.name}>{item.name}</div>)}
+        </div>
     );
 }
 

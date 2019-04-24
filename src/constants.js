@@ -1,6 +1,6 @@
 export const myMockData = {
-	"address": "Bootá, Colombia.",
-	"avatar": "https://s3.amazonaws.com/chewiekie/img/photo.jpg",
+	"address": "Bogotá, Colombia.",
+	"avatar": require('./assets/images/julian.png'),
 	"bio": "Ignore the squirrels, you'll never catch them anyway hack, for floof tum, tickle bum, jellybean footies curly toes climb leg roll over and sun my belly, ",
 	"certificate": [{
 			"date": "Jan 2021",

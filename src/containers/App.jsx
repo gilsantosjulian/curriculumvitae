@@ -14,7 +14,7 @@ const App = () => {
 	const data = userGetData();
 	console.log(data);
 
-	return (
+	return data.length == 0 ? <h1>Cargando ...</h1> : (
 		<Main>
 			<Sidebar>
 				<About
@@ -22,7 +22,7 @@ const App = () => {
 					name={data.name}
 					profession={data.profession}
 					bio={data.bio}
-					addres={data.addres}
+					address={data.address}
 					social={data.social}
 				/>
 			</Sidebar>
