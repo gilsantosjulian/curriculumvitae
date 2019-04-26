@@ -4,7 +4,6 @@ import H3Styled from '../styled/H3Styled';
 import PStyled from '../styled/PStyled';
 
 const Education = props => {
-	props ? console.log(props.data) : 'no hay';
 
 	return (
 		<div className='Education'>
@@ -21,7 +20,6 @@ const Education = props => {
 					))
 				}
 			</div>
-
 		</div>
 	);
 }
