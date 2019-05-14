@@ -12,7 +12,6 @@ const AboutAvatar = styled.div`
 
 const AboutImg = styled.img`
   border-radius: 100%;
-  width: 160px;
   height: 190px;
   border: 2px solid #009688;
   margin: 0 auto;
@@ -43,6 +42,7 @@ const AboutBio = styled.p`
   color: #757575;
   font-size: 1em;
   font-weiht: 300;
+  text-align: justify;
 `;
 
 const AboutLocation = styled.p`
